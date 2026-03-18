@@ -1,0 +1,1 @@
+projeto com intuito na aprendizagem de fundamentos em JS
