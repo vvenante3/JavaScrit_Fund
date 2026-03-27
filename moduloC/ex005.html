@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: rgb(51, 57, 110);
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Compreendendo o DOM com JS</h1>
+
+    <p>Aqui é o resultado</p>
+
+    <p>É isso aí meu patrão</p>
+
+    <div id="msg">Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        
+        var d = window.document.getElementById('msg')
+
+        d.innerText = 'Teste'
+
+        
+    </script>
+    </body>
+</html>

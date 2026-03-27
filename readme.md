@@ -37,3 +37,7 @@ n1.toFixed(2)
 n1.toFixed().replace ('.' , ',')
 
 n1.toLocaleString('pt-BR' , {style:'currency', currency: 'BR'})
+
+------------------ Módulo C ----------------------
+
+DOM - Document Object Model -> Conjunto de objetos no navegador que irá dar acesso aos componentes internos do website.
