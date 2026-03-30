@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Nacionalidade</title>
+</head>
+<body>
+    <h1>Qual a sua nacionalidade?</h1>
+
+    Digite a sua nacionalidade: <input type="text" name="txtNac" id="txtNac">
+    <input type="button" value="Analisar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var txtN = document.getElementById('txtNac')
+            var res = document.getElementById('res')
+            var n = txtN.value
+
+            res.innerHTML = `A sua nacionalidade é: <strong>${n}</strong>`
+
+            if(n == 'brasileiro') {
+                res.innerHTML += `<p>Aceita uma sopa de macaco?</p>`
+            } else if (n == 'frances') {
+                res.innerHTML += `<p>Aceita um cacetinho?</p>`
+            } else if (n == 'chines') {
+                res.innerHTML += `<p>Aceita um cacholinho flito?</p>`
+            }
+        }
+
+    </script>
+</body>
+</html>
