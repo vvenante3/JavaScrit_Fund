@@ -1,0 +1,89 @@
+<!-- 
+ 
+Desenvolver uma página onde de acordo com a hora:
+ 
+-> Mude o fundo da tela de claro para escuro
+-> Altere a foto 
+-> Mude a mensagem de boas-vindas com base na hora
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 014 - Curso em vídeo</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 85vh;
+            
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.329);
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        div {
+            padding: 5px;
+        }
+
+        .tamanhoFoto {
+            height: 40vh;
+            width: 40vh;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Hora do Dia</h1>
+    </header>
+    <section >
+        <div id="msg"></div>
+        <div id="foto">
+            <img id="imagem" class="tamanhoFoto" src="img/dia.jpeg" alt="">
+        </div>
+    </section>
+
+    <script>
+        function carregar(){
+            var img = document.getElementById('imagem')
+            var msg = document.getElementById('msg')
+
+            var data = new Date()
+            var hora = data.getHours()
+
+            msg.innerHTML = `Agora são ${hora} horas.`
+
+            if(hora <= 12) {
+                img.src = 'img/dia.jpeg'
+                document.body.style.background = '#fafad3'
+            } else if (hora > 12 && hora <= 18) {
+                img.src = 'img/tarde.jpeg'
+                document.body.style.background = '#ffb52d'
+            } else {
+                img.src = 'img/noite.jpeg'
+                document.body.style.background = '#000080'
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>
