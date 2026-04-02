@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85hv;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 5px 5px 15px black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+header {
+    padding: 25px;
+}
+
+div {
+    padding: 10px;
+}
+
+#txtInformativo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;
+}
+
+#txtInformativo img {
+    width: 200px;
+    height: 200px;  
+    object-fit: cover; 
+    margin-top: 10px;
+    border-radius: 50%;
+}

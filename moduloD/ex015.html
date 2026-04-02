@@ -9,3 +9,35 @@ retorne em um texto a idade em anos
 e uma foto com base na idade
 
 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 015 - Curso em vídeo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="verificar()">
+    <header>
+        <h1>Verificar Idade</h1>
+    </header>
+    <section>
+        <div>
+            Ano de Nascimento: <input type="number" name="AnoNascimento" id="anoNascimento">
+        </div>
+        <div>
+            Masculino<input type="radio" name="radsex" id="masculino" checked>
+            Feminino<input type="radio" name="radsex" id="feminino">
+        </div>
+
+        <input type="button" value="Verificar" onclick="verificar()">
+
+        <div id="txtInformativo">
+            Preencha as informações acima
+        </div>
+    </section>
+    
+    <script src="ex015.js"></script>
+</body>
+</html>
