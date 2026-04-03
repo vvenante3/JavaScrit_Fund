@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alteração de background</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="fundo" onload="verificar()">
+    <section>
+        <div style="background-color: black; font-family: Arial, Helvetica, sans-serif; font-size: 40px; color: white;">
+             <form>
+                <label>background color: </label>
+                <select style="font-size: 30px;" name="cores" id="cores">
+                    <option value="amarelo"     >amarelo    </option>
+                    <option value="azul"        >azul       </option>
+                    <option value="verde"       >verde      </option>
+                    <option value="vermelho"    >vermelho   </option>
+                </select>
+            </form>
+        </div>
+        <div id="res"> 
+            <input style="font-size: 30px;" type="button" value="verificar" onclick="verificar()">
+            <img id="img">
+        </div>
+    </section>
+    <script src="exExtra.js"></script>
+</body>
+</html>
