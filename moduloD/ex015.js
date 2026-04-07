@@ -7,7 +7,7 @@ function verificar() {
     var txt = document.getElementById('txtInformativo')
     
     if(anoNascimento.value.length == 0 || Number(anoNascimento.value) > ano) {
-        window.alert('[Erro]: Verifique os dados e tente novamente!')
+        // window.alert('[Erro]: Verifique os dados e tente novamente!')
     } else {
         var sexo = document.getElementsByName('radsex')
         var idade = ano - Number(anoNascimento.value)
